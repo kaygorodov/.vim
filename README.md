@@ -4,7 +4,7 @@
 Vim as Python IDE (Ubuntu)
 
 
-# How to install
+# How to install (ubuntu)
 
 ## 1. Compiling vim from source
 
