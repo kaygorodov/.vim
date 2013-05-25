@@ -42,4 +42,4 @@ Vim as Python IDE (Ubuntu)
     wget https://github.com/Lokaltog/powerline-fonts/raw/master/UbuntuMono/Ubuntu%20Mono%20derivative%20Powerline.ttf
     sudo fc-cache -vf ~/.fonts
 
-Terminal / Edit / Profile preferences / Change font to Ubuntu Monno Powerline
+Terminal / Edit / Profile preferences / Change font to Ubuntu Mono Powerline
