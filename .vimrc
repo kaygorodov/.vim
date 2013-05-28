@@ -9,7 +9,6 @@ set foldlevel=99
 
 set number
 
-
 " Real programmers don't use TABs but spaces
 set tabstop=4
 set softtabstop=4
@@ -47,9 +46,7 @@ nmap <silent> <leader>k :wincmd k<CR>
 nmap <silent> <leader>j :wincmd j<CR>
 nmap <silent> <leader>h :wincmd h<CR>
 nmap <silent> <leader>l :wincmd l<CR>
-
-"map <C-Left> :tabprevious<CR>
-"map <C-Right> :tabnext<CR>
+nmap <silent> <leader>cw :close<CR>
 
 map <silent> <c-j> :tabprevious<CR>
 map <silent> <c-k> :tabnext<CR>
@@ -65,19 +62,17 @@ let g:pymode_breakpoint = 0
 let g:pymode_syntax = 1
 let g:pymode_syntax_builtin_objs = 0
 let g:pymode_syntax_builtin_funcs = 0
+let g:pymode_virtualenv = 1
 map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
-
-" easier moving of code blocks
-" " Try to go into visual mode (v), thenselect several lines of code here and
-" " then press ``>`` several times.
-vnoremap < <gv  " better indentation
-vnoremap > >gv  " better indentation
-
+" System clipboard
 set clipboard=unnamedplus
 
-let g:pymode_virtualenv = 1
-
-nnoremap <silent> <leader>cw :close<CR>
+" NerdTree settings
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeIgnore = ['\.pyc$']
+
+" 80
+set colorcolumn=80
+highlight ColorColumn ctermbg=233
 
