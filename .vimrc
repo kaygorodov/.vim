@@ -40,11 +40,13 @@ let g:Powerline_symbols = 'fancy'
 set t_Co=256
 color wombat256mod
 
+let mapleader = "," "custom mapleader
+
 "" Use ctrl-[hjkl] to select the active split!
-"nmap <silent> <c-k> :wincmd k<CR>
-"nmap <silent> <c-j> :wincmd j<CR>
-"nmap <silent> <c-h> :wincmd h<CR>
-"nmap <silent> <c-l> :wincmd l<CR>
+nmap <silent> <leader>k :wincmd k<CR>
+nmap <silent> <leader>j :wincmd j<CR>
+nmap <silent> <leader>h :wincmd h<CR>
+nmap <silent> <leader>l :wincmd l<CR>
 
 "map <C-Left> :tabprevious<CR>
 "map <C-Right> :tabnext<CR>
@@ -73,4 +75,9 @@ vnoremap < <gv  " better indentation
 vnoremap > >gv  " better indentation
 
 set clipboard=unnamedplus
+
+let g:pymode_virtualenv = 1
+
+nnoremap <silent> <leader>cw :close<CR>
+map <C-n> :NERDTreeToggle<CR>
 
