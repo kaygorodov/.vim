@@ -51,20 +51,6 @@ nmap <silent> <leader>cw :close<CR>
 map <silent> <c-j> :tabprevious<CR>
 map <silent> <c-k> :tabnext<CR>
 
-" Settings for python-mode
-" " cd ~/.vim/bundle
-" " git clone https://github.com/klen/python-mode
-map <Leader>g :call RopeGotoDefinition()<CR>
-let ropevim_enable_shortcuts = 1
-let g:pymode_rope_goto_def_newwin = "vnew"
-let g:pymode_rope_extended_complete = 1
-let g:pymode_breakpoint = 0
-let g:pymode_syntax = 1
-let g:pymode_syntax_builtin_objs = 0
-let g:pymode_syntax_builtin_funcs = 0
-let g:pymode_virtualenv = 1
-map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
-
 " System clipboard
 set clipboard=unnamedplus
 
@@ -75,4 +61,19 @@ let NERDTreeIgnore = ['\.pyc$']
 " 80
 set colorcolumn=80
 highlight ColorColumn ctermbg=233
+
+
+
+if has('python')
+py << EOF
+import os.path
+import sys
+import vim
+if 'VIRTUAL_ENV' in os.environ:
+    project_base_dir = os.environ['VIRTUAL_ENV']
+    sys.path.insert(0, project_base_dir)
+    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+    execfile(activate_this, dict(__file__=activate_this))
+EOF
+endif
 
