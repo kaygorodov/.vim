@@ -77,3 +77,5 @@ if 'VIRTUAL_ENV' in os.environ:
 EOF
 endif
 
+nnoremap <F6> :GundoToggle<CR>
+
