@@ -25,11 +25,9 @@ Vim as Python IDE (Ubuntu)
     git submodule update  
     ln -s .vim/.vimrc
 
-## 3. rope & ropemode & ropevim
+## 3. jede
 
-    sudo pip install rope
-    sudo pip install ropemode
-    sudo pip install ropevim
+    sudo pip install jede
 
 ## 4. powerline 
 
