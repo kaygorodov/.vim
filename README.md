@@ -27,7 +27,7 @@ Vim as Python IDE (Ubuntu)
 
 ## 3. jede
 
-    sudo pip install jede
+    sudo pip install jedi
     sudo pip install flake8
 
 ## 4. powerline 
