@@ -25,20 +25,8 @@ Vim as Python IDE (Ubuntu)
     git submodule update  
     ln -s .vim/.vimrc
 
-## 3. jede
+## 3. jedi
 
     sudo pip install jedi
     sudo pip install flake8
 
-## 4. powerline 
-
-    sudo pip install --user git+git://github.com/Lokaltog/powerline
-    mkdir ~/.fonts
-    cd ~/.fonts
-    wget https://github.com/Lokaltog/powerline-fonts/raw/master/UbuntuMono/Ubuntu%20Mono%20derivative%20Powerline%20Bold%20Italic.ttf
-    wget https://github.com/Lokaltog/powerline-fonts/raw/master/UbuntuMono/Ubuntu%20Mono%20derivative%20Powerline%20Bold.ttf
-    wget https://github.com/Lokaltog/powerline-fonts/raw/master/UbuntuMono/Ubuntu%20Mono%20derivative%20Powerline%20Italic.ttf
-    wget https://github.com/Lokaltog/powerline-fonts/raw/master/UbuntuMono/Ubuntu%20Mono%20derivative%20Powerline.ttf
-    sudo fc-cache -vf ~/.fonts
-
-Terminal / Edit / Profile preferences / Change font to Ubuntu Mono Powerline
