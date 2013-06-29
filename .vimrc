@@ -1,4 +1,3 @@
-set rtp +=~/.vim/bundle/powerline/powerline/bindings/vim/
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
